@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        h1{
+            text-shadow: 1px 1px 5px red;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color:  rgb(5, 5, 77);
+            text-align: center;
+            padding: 30px;
+        }
+        header>a{
+            color:white;
+            background-color: blue;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .s1{
+            height: 700px;
+            background-image: linear-gradient(rgba(0,0,0,0.6),
+            rgba(0,0,0,0.6)),url('data:image/jpeg;base64,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');
+
+            background-size: 100% 100%;
+            color: white;
+            text-align: center;
+            padding-top: 300px;
+
+        }
+        .s2{
+            background-color: whitesmoke;
+            text-align: center;
+            height: 500px;
+            padding-top: 150px;
+        }
+        .s2>ul>li{
+            color:white;
+            margin:10px;
+            border-radius: 10px;
+            padding-top: 50px;
+            width: 200px;
+            height: 120px;
+            display: inline-block;
+        }
+        .s3{
+            height: 500px;
+            text-align:center;
+            padding-top:150px;
+
+
+        }
+        .child{
+            background-color: rgb(142, 187, 224);
+            border: 3px solid blue;
+            display: inline-block;
+            width: 300px;
+            height: 200px;
+            padding: 40px;
+            margin:10px;
+            border-radius: 20px;
+            box-shadow: 1px 1px 5px 2px red;
+            
+        }
+    </style>
+
+    <header>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Contact</a>
+    </header>
+    <section class="s1">
+        <h1>CSS LEARNING
+        </h1>
+        <br><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi ad praesentium molestias pariatur, quibusdam dicta iure, fugit provident hic at eius voluptates, repellendus non ea iste amet natus fuga.</p>
+    </section>
+
+    <section class="s2">
+        <h1>CSS COLORS</h1>
+        <ul>
+            <li style="background-color: red;">content</li>
+            <li style="background-color:blue ;">content</li>
+            <li style="background-color:green ;">content</li>
+            <li style="background-color:yellow ;">content</li>
+        </ul>
+
+    </section>
+
+    <section class="s3">
+        <h1>CSS BOX MODEL</h1>
+        <div class="card">
+            <div class="child">
+                <h1>CARD ONE</h1>
+                <p>this card demonstrates padding, border, margin, width, and background</p>
+
+
+            </div>
+            <div class="child">
+                <h1>CARD TWO
+                </h1>
+                <p>this card demonstrates padding, border, margin, width, and background</p>
+
+
+            </div>
+
+        </div>
+    </section>
+    <section class="s2" style="font-size: 1.6rem;">
+        <h1>CSS FONTS</h1>
+        <div style="font-weight: 300px;padding: 10px;">light weight font</div>
+        <div style="font-weight: 400px;padding: 10px;">Normal weight font</div>
+        <div style="font-weight: 700;padding: 10px;">Bold weight form</div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam aut magnam dolor debitis consequuntur odio accusantium earum nobis, cupiditate veniam alias perspiciatis esse aliquam maxime iure ex, dolore, nisi dignissimos!</p>
+
+    </section>
+
+    <footer style="background: rgb(6, 6, 61);color: white;padding: 40px;text-align: center;">
+        CSS learning project template
+    </footer>
+</body>
+</html>
