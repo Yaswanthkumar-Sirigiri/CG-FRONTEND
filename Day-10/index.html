@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        /*Break
+    
+        let attempts=0
+        let password=1234
+
+        while(true){
+            let inp=prompt('enter your password')
+
+            if(inp==password){
+                console.log('welcome to your banking application')
+                break;
+            }
+            if(attempts==3){
+                console.log('your banking account has been blocked, try again after 24hours')
+                break;
+            }
+            attempts++
+        } */
+
+        /* FUNCTIONS
+
+        let Subscription=[
+            {user:'Ramesh',id:9849,status:'Premium'},
+            {user:'Rajini',id:9494,status:'Premium'},
+            {user:'Yaswanth',id:8688,status:'Basic'},
+            {user:'Tejaswini',id:1348,status:'Basic'},
+            {user:'VEnkateswarao',id:9989,status:'Premium+'},
+            {user:'Sampoornamma',id:9291,status:'Premium+'},
+            
+        ]
+
+        for(i of Subscription){
+            if(i.status=='Basic') continue
+            console.log(i.user,i.id)
+        }*/
+
+        /* FUNCTION PROPERTIES
+
+        function funname(a='guest'){
+            console.log(a)
+            return 'hello'
+            console.log('hi')
+        }
+        funname('ram')
+        funname('ramesh')
+
+        funname('teja')//calling
+        console.log(funname)// definition
+        console.log(funname())//execution + return value*/
+
+
+        /* CLOSURES
+        function outer(){
+            let count=0
+            console.log('outer executed')
+            return function(){
+                count++
+                console.log('say my name')
+                console.log(count)
+                
+            }
+        }
+
+        outer()()//1
+        outer()()//1
+
+        let a=outer()
+        a()//1
+        a()//2  */
+
+        /* ARROW & CALL-BACK FUNC
+        let fun=(a,b,c)=>{        //------|\  ARROW    ------ |\      
+            console.log(a+b,c())  //------|/  FUNCTIONS       | \
+        }                           //                        |  \    CALL BACK
+        fun(1,2,greet)               //                       |   \    FUNCTIONS
+        function greet(){           //                        |  /
+            return 'hello'         //                         | /
+        }                          //                  -------|/
+        */
+
+            
+        let founder='Gus Fring'
+        console.log(founder)  //-----> Global scope
+        {
+            let Cook='heisenberg'  //--> block scope
+            console.log(Cook)
+        }
+        function Lab(){
+            let assistant='Jesse'  //----> functon or local scope
+            console.log(assistant)
+        }
+        Lab()  
+
+
+
+        <div id="container"></div>
+        let stddata=[
+    {name:'raj',marks:90},
+    {name:'ram',marks:70},
+    {name:'rani',marks:30},
+]
+
+for (i of stddata){
+    let grade=''
+    if(i.marks>70){
+        grade='A'
+    }else if(i.marks>35){
+        grade='B'
+    }else{
+        grade='F'
+    }
+   
+    let output=`
+    <h1>${i.name}</h1>
+    <div>${i.marks}</div>
+    <h2>${grade}</h2>
+    `
+    let container=document.getElementById('container')
+    container.innerHTML+=output
+}
+        
+
+
+    </script>
+
+    
+</body>
+</html>
